@@ -51,7 +51,7 @@ try:
         VALUES (%s, %s, %s, %s, %s, %s)
     """
 
-    cursor.executemany(insert_query, data_tuples)
+    cursor.executemany(insert_query, data_tuples) 
     print("Datos insertados exitosamente.")
 except MySQLdb.Error as e:
     print("Error al insertar los datos:", e)
