@@ -17,7 +17,7 @@ try:
     
     cursor.execute("""
         CREATE TABLE EmployeePerformance (
-        id INT AUTO_INCREMENT PRIMARY KEY,
+        id INT AUTO_INCREMENT PRIMARY KEY, 
         employee__id INT,
         department VARCHAR(50),
         performance_score DECIMAL(10, 2),
